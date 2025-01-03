@@ -3,7 +3,7 @@
 function prepare_bastion() {
     sudo apt update
     sudo apt install ansible -y
-    if [ ! -f /usr/share/keyrings/hashicorp-archive-keyring.gpg]
+    if [ ! -f /usr/share/keyrings/hashicorp-archive-keyring.gpg ]
     then
         wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
     fi
